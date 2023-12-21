@@ -6,6 +6,9 @@ createApp({
             emails:[],
         }
     },
+    created(){
+        this.generateEmail();
+    },
     methods:{
         generateEmail(){
             this.emails = [];
@@ -17,5 +20,5 @@ createApp({
                 })
             }
         },
-    }
+    },
 }).mount('#app');
