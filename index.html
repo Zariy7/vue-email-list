@@ -11,7 +11,9 @@
     <body>
         <div id="app">
             <button @click="generateEmail()">Click em!</button>
-            <div v-for="email, index in emails" v-show="emails.length == 10" :key="index">{{email}}</div>
+            <ul>
+                <li v-for="email, index in emails" v-show="emails.length == 10" :key="index">{{email}}</li>
+            </ul>
         </div>
 
         <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
